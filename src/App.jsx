@@ -1,5 +1,16 @@
-const App = () => {
-  return <div className="">app</div>;
-};
+function App () {
+  return(
+      <>
+        <Hero />
+        <Services />
+        <Product />
+        <Refrence />
+        <Care />
+        <Footer />
+      </>
+  )
+
+}
 
 export default App;
+ 
