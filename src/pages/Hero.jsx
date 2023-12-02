@@ -2,11 +2,11 @@ import NavLink from "../Components/NavLink";
 import heroImage from "../assets/hero-image.svg";
 import logo from "../assets/logo.svg";
 import carIcon from "../assets/cart-icon.svg";
-
 //react-icons
 import { HiMenuAlt3 } from "react-icons/hi"; // debuged code
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import FadeIn from "../Components/FadeIn";
 
 const Hero = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -43,10 +43,12 @@ const Hero = () => {
           } left-0 bg-[#dde0e5] h-[410px] transition-all duration-[800ms] shadow-xl z-10 py-8 px-12 rounded-b-xl`}
         >
           <AiOutlineClose
+            onClick={() => setShowMobileMenu(false)}
             size="25"
             className="absolute top-5 right-5 cursor-pointer"
-            onClick={() => setShowMobileMenu(false)}
           />
+
+          {/* navbar to minimized to window responsive */}
 
           <ul className="pt-[60px] items-center flex flex-col gap-8">
             <NavLink to="services" mobileMenu>
@@ -65,6 +67,12 @@ const Hero = () => {
           <img src={carIcon} className="mt-8 mx-auto cursor-pointer" alt="" />
         </div>
       </div>
+
+      <FadeIn delay={0.2} direction="down" padding fullWidth>
+        <h1 className="mt-[90px] text-center text-5xl leading-right xs:text-[64px] text-white max-w-[1050px]">
+          Bring serenity to Your Pakce With Interior Plants
+        </h1>
+      </FadeIn>
     </div>
   );
 };
