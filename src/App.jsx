@@ -10,7 +10,7 @@ function App() {
        {/* added structure design  step 1 - 6 */}
     
       <Hero />
-      {/* <Services /> */}
+      <Services />
       {/* <Product /> */}
       {/* <Refrence /> */}
       {/* <Care /> */}
