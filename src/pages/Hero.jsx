@@ -29,7 +29,7 @@ const Hero = () => {
         <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
           <NavLink to="services">Services</NavLink>
           <NavLink to="product">Shop</NavLink>
-          <NavLink to="refrence">Refrence</NavLink>
+          <NavLink to="reference">reference</NavLink>
           <NavLink to="care">Care</NavLink>
         </ul>
         <img src={carIcon} alt="" className="hidden md:block cursor-pointer" />
@@ -58,8 +58,8 @@ const Hero = () => {
             <NavLink to="product" mobileMenu>
               Shop
             </NavLink>
-            <NavLink to="refrence" mobileMenu>
-              Refrence
+            <NavLink to="reference" mobileMenu>
+              Reference
             </NavLink>
             <NavLink to="care" mobileMenu>
               Care
