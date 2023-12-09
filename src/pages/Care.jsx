@@ -1,8 +1,44 @@
+import FadeIn from "../Components/FadeIn";
+import { careList, careSubTitle, careTitle } from "../data";
 
+import imageFour from "../assets/image-four.svg";
 const Care = () => {
   return (
-    <div>Care</div>
-  )
-}
+    <div id="care" className="px-10 max-w-[1490px] mx-auto mb-[160px] ">
+      <FadeIn delay={0.2} direction="down">
+        <h1 className="text-5xl lg:text-[64px] font-medium text-fontBlack mb-6 text-center ">
+          {careTitle}
+        </h1>
+      </FadeIn>
+      <FadeIn delay={0.4} direction="down">
+        <h5 className="text-[#4f4f4f] text-lg xs:text-xl mb-12 ">
+          {careSubTitle}
+        </h5>
+      </FadeIn>
+      <div className="flex flex-col lg:flex-row gap-8 ">
+        <div className="flex flex-col gap-8 items-center">
+          {careList.map((item, i) => (
+            <FadeIn key={i} delay={(i - 1) * 0.2} direction="left">
+              <div className="flex flex-col  xs:flex-row gap-6 items-center ">
+                <img src={item.img} className="h-[80px] w-[68px] " alt="" />
+                <div>
+                  <h3 className="text-center xs:text-start mb-2 text-2xl lg:text-[28px] text-fontBlack font-medium">
+                    {item.title}
+                  </h3>
+                  <h6 className="text-center xs:text-start text-base lg:text-lg text-fontBlack font-medium">
+                    {item.subtitle}
+                  </h6>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+        <FadeIn delay={0.6} direction="right">
+          <img src={imageFour} alt="plants" />
+        </FadeIn>
+      </div>
+    </div>
+  );
+};
 
-export default Care
+export default Care;

@@ -1,8 +1,10 @@
 import peymentIcon from "./assets/free-shiping-icon.svg";
 import shiping from "./assets/support-icon.svg";
 import supportIcon from "./assets/quick-payment-icon.svg";
-
+import sunIcon from "./assets/sun-icon.svg";
 import productOneIcon from "./assets/product-one.svg";
+import waterIcon from "./assets/water-icon.svg";
+import plantIcon from "./assets/plant-icon.svg";
 import productTwoIcon from "./assets/produc-two.svg";
 import productThreeIcon from "./assets/product-three.svg";
 export const services = [
@@ -45,7 +47,34 @@ export const products = [
   },
 ];
 
+export const referenceTitle = "Interior Plants Reference";
+export const referenceSubtitle = "make your home  cozi with refershing plants ";
 
-
-export const referenceTitle = 'Interior Plants Reference';
-export const referenceSubtitle = 'make your home  cozi with refershing plants ';
+export const careTitle = "Interior Plants Reference";
+export const careSubTitle = "Take care of plants with all your heart";
+export const careList = [
+  {
+    title: "Adjust Lighting",
+    subtitle:
+      "whrn caring for houseplants , make sure the room temperaure is cold nor too hot",
+    img: sunIcon,
+  },
+  {
+    title: "dont water too often",
+    subtitle:
+      "watering ornaental houseplants dose not have to be done every day ",
+    img: waterIcon,
+  },
+  {
+    title: "Choose the right container",
+    subtitle:
+      "housplants will need diferent containers depending on thier type and size",
+    img: plantIcon,
+  },
+  {
+    title: "Fertilize reguluray",
+    subtitle:
+      "The nutrents most indoor housplants need are nitrogn for balance and potassium for stem strength",
+    img: sunIcon,
+  },
+];
