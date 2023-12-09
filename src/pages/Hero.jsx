@@ -28,7 +28,7 @@ const Hero = () => {
         <img src={logo} alt="" className="" />
         <ul className="hidden md:flex items-center gap-10 lg:gap-[68px]">
           <NavLink to="services">Services</NavLink>
-          <NavLink to="product">Shop</NavLink>
+          <NavLink to="products">Shop</NavLink>
           <NavLink to="reference">reference</NavLink>
           <NavLink to="care">Care</NavLink>
         </ul>
@@ -55,7 +55,7 @@ const Hero = () => {
             <NavLink to="services" mobileMenu>
               Services
             </NavLink>
-            <NavLink to="product" mobileMenu>
+            <NavLink to="products" mobileMenu>
               Shop
             </NavLink>
             <NavLink to="reference" mobileMenu>
