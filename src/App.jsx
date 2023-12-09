@@ -14,7 +14,7 @@ function App() {
       <Product />
       <Reference />
       <Care />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

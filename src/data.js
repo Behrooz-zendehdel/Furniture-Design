@@ -78,3 +78,29 @@ export const careList = [
     img: sunIcon,
   },
 ];
+
+export const newsletter = "Newsletter";
+
+export const footerLinksColumnTwo = [
+  {
+    title: "Support",
+    links: ["About Us", "careers", "Blog"],
+  },
+  {
+    title: "Useful Links",
+    links: ["Payment ", "Terms of service", "Privacy Policy"],
+  },
+];
+export const footerLinksColumnOne = [
+  {
+    title: "Ourr Menu",
+    links: ["Best Product", "Categories"],
+  },
+  {
+    title: "Address",
+    links: [
+      "sharake shariati khiabane mahan khiaban nikokar mojatame mahan",
+      "tehran",
+    ],
+  },
+];
